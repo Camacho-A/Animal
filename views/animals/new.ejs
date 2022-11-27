@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+
+
+        <main>
+            <div>
+              <form action="/animals" method="POST">
+                <fieldset>
+                    <legend>Create A New Animal</legend>
+
+                    <fieldset>
+                        <label>
+                            <b>Name:</b> <input 
+                                type="text"
+                                name="name"
+                                placeholder="Enter Animal Name" />
+                        </label>
+                        <br>
+                        <label>
+                            <b>Species:</b> <input 
+                                type="text"
+                                name="species"
+                                placeholder="Enter Species" />
+                        </label>
+                        <br>
+                        <label>
+                            <b>Extinct?</b> <input type="checkbox" name="extinct" <%= animal.extinct ? "checked" : "" %> />
+                        </label>
+                        <br>
+                        <label>
+                            <b>Location:</b> <input 
+                                type="text"
+                                name="location"
+                                placeholder="Enter Location"
+                            />
+                        </label>
+                        <br>
+                        <label>
+                            <b>Life Expectancy:</b> <input 
+                                type="text"
+                                name="lifeExpectancy"
+                                placeholder="Enter Life Expectancy"
+                            />
+                        </label>
+                    </fieldset>
+
+                <input class="inputbutton" type="submit" value="Add New Animal" />
+                <br>
+                <a href="/animals/"> 
+      <button class="back">Back To Main Page</button>
+    </a>
+            </form> 
+            
+
+            </div>
+        </main>
+    </body>
+</html>
