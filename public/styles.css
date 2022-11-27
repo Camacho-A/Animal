@@ -1,0 +1,50 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(https://s.cdnmpro.com/398039251/p/l/6/animals-of-all-continents-children-s-room-wallpaper-12843~16566.jpg);
+    background-size: cover;
+    background-position: top;
+    opacity: 0.25;
+ 
+}
+
+h1 {
+    font-family: 'Cormorant', serif;
+    text-transform: uppercase;
+    font-size: 65px;
+    padding: 10px 0 0 20px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 a {
+    color:black;
+    font-style: italic;
+    font-size: 35px;
+    text-decoration: none;
+    padding: 30px 0x;
+    margin: 0 20px;
+}
+
+h2 a:hover {
+    color: coral;
+}
+
+label {
+    font-weight: bold;
+    padding-left: 15px;
+    margin: 0 10px;
+}
+
+.index {
+    padding-bottom: 20px;
+    border-bottom: 5px solid ghostwhite;
+ 
+}
+
+

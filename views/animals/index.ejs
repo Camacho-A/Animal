@@ -4,23 +4,24 @@
 
 	<body>
 		<%- include("../partials/header.ejs") %>
-
+		
+		
 		<main>
 			<div>
-				<a href="/animals/new"><button>Add A New Animal</button></a>
+				<a class="new" href="/animals/new"><button>Add A New Animal</button></a>
 				<% for(animal of animals) { %>
-				<article>
+				<article class="index">
 					<h2>
 						<a href="/animals/<%= animal._id %>"
 							><i><%= animal.name %></i></a
 						>
 					</h2>
-					<br />
-					<b>Conservation Status:</b> <%= animal.extinct ? "Extinct" : "Existing" %>
+					<label>Conservation Status:</label><%= animal.extinct ? "Extinct" : "Existing" %>
                     <br />
-					<b>Location:</b> <%= animal.location %>
+					<label>Location:</label> <%= animal.location %>
                     <br />
-					<b>Life Expectancy:</b> <%= animal.lifeExpectancy %> Years
+
+					
 				</article>
 				<% } %>
 			</div>
