@@ -7,10 +7,13 @@
 		
 		
 		<main>
-			<div>
-				<a class="new" href="/animals/new"><button>Add A New Animal</button></a>
+			<div class="new-button">
+				<a class="new" href="/animals/new"><button>Add a New Animal</button></a>
+
+			</div>
+			<div class="index-div"> 
 				<% for(animal of animals) { %>
-				<article class="index">
+				<article class="index-article">
 					<h2>
 						<a href="/animals/<%= animal._id %>"
 							><i><%= animal.name %></i></a
@@ -20,8 +23,6 @@
                     <br />
 					<label>Location:</label> <%= animal.location %>
                     <br />
-
-					
 				</article>
 				<% } %>
 			</div>

@@ -1,3 +1,4 @@
+/* Index Page */
 body::before {
     content: "";
     position: fixed;
@@ -8,7 +9,7 @@ body::before {
     z-index: -1;
     background-image: url(https://s.cdnmpro.com/398039251/p/l/6/animals-of-all-continents-children-s-room-wallpaper-12843~16566.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     opacity: 0.25;
  
 }
@@ -31,20 +32,183 @@ h2 a {
     margin: 0 20px;
 }
 
-h2 a:hover {
-    color: coral;
-}
-
 label {
     font-weight: bold;
     padding-left: 15px;
     margin: 0 10px;
 }
 
-.index {
-    padding-bottom: 20px;
-    border-bottom: 5px solid ghostwhite;
+.index-div {
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.index-article {
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 5px;
+	display: inline-block;
+	margin: 5px;
+}
+
+.index-article:hover {
+    background-color: #d28019;
+}
+
+button {
+    border: none;
+    background: none;
+    letter-spacing: 2px;
+}
+
+.new {
+    align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-family: Neucha, sans-serif;
+  font-size: 2rem;
+  line-height: 23px;
+  outline: none;
+  padding: .50rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+    touch-action: manipulation;
+    margin: 0 50px;
+}
+
+.new:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color: #d28019;
+}
+
+.new:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+/* Edit Page */
+.new-a {
+    align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .50rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+    touch-action: manipulation;
+    margin: 15px 30px 0;
+    letter-spacing: 2px;
+}
+
+.new-a:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color: #d28019;
+}
+
+.new-a:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.back {
+    align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
  
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 5px;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+    touch-action: manipulation;
+    margin: 50px 20px;
+    letter-spacing: 2px;
+}
+
+.back:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color: #41982b;
+}
+
+.back:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+/* Show Page */
+.show-article {
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 10px;
+	display: inline-block;
+	margin: 15px;
+}
+
+.show-div {
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.show-name {
+    color:black;
+    font-style: italic;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 0 20px;
 }
 
 
